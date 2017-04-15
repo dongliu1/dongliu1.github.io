@@ -9,6 +9,8 @@ function init_rox_tabs(tabid,_src) {
     var param=_src.split("?");
     var isExist=false;
     $(".inc-content>iframe").hide();
+    sessionStorage._tabid=tabid;
+    sessionStorage._src=_src;
     if(_iframe.length){
         _iframe.show();
         isExist=true;
@@ -18,17 +20,18 @@ function init_rox_tabs(tabid,_src) {
     }
     //判断路径是否传入参数
     if(param[1])$(".inc-tabs>ul:not(:first)").hide();
-    if(isExist)init_select_tab(_iframe,param[1]);
+    if(isExist)init_select_tab(iframeid,param[1]);
 }
 
 //选中iframe内对应tab项
-function init_select_tab(_iframe,param) {
-    var doc=$(_iframe).contents();
+function init_select_tab(iframeid,param) {
+    console.log(iframeid);
+    var doc=$("#"+iframeid).contents();
     var menuid=param.split("=")[1];
     if(!menuid)return;
     $(".inc-left-menus li",doc).removeClass("tab-active");
     $("[nodeid='tab-"+menuid+"']",doc).addClass("tab-active");
-    _inc_right._init(doc,_iframe);
+    _inc_right._init(doc,iframeid);
 }
 
 //加载左部与右部
@@ -53,10 +56,9 @@ function init_load_pubtemplate(_iframeid) {
         });
         _html+="</ul>";
         $(".inc-left-menus",this).html(_html);
-        console.log(_src,param);
-        init_select_tab("#"+_iframeid,param);
-    });
-    $(".contain>.inc-right",doc).load("templates/public-page/ifr-right.html",function () {
-        _inc_right._init(doc,_iframeid);
+        $(".contain>.inc-right",doc).load("templates/public-page/ifr-right.html",function () {
+            //_inc_right._init(doc,_iframeid);
+            init_select_tab(_iframeid,param);
+        });
     });
 }

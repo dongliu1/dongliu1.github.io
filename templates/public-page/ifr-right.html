@@ -8,7 +8,6 @@
         _scopeId:"inc-right-content",
         _init:function (document,_iframeid) {
             _inc_right.iframeObj=document;
-            if(_iframeid.indexOf("#"))_iframeid.replace("#","");
             _inc_left.iframeid=_iframeid;
             $.post("rsc/files/20170416",function (content) {
                 $("#"+_inc_right._scopeId,document).text(content);

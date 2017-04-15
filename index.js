@@ -118,7 +118,14 @@ var inc_tabs={
 
 var inc_content={
     _init:function () {
-        init_rox_tabs("index","index/index.html?menuid=");
+        var _tabid=sessionStorage._tabid;
+        var _src=sessionStorage._src;
+        if(!sessionStorage._tabid||!sessionStorage._src){
+            _tabid="index";
+            _src="index/index.html?menuid="
+        }
+        console.log(_tabid,_src,sessionStorage);
+        init_rox_tabs(_tabid,_src);
     }
 };
 

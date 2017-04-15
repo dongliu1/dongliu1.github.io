@@ -11,4 +11,4 @@
 .inc-tabs>ul:not(:first-child)>li:last-child{border-bottom: 0;}
 .inc-tabs>ul:not(:first-child)>li:hover{color:#a10b0b!important;}
 .inc-content{min-height:886px;}
-.inc-footer{background: url("rsc/img/foot.jpg") repeat-x;width:100%;height:115px;text-align:center;padding-top:30px;line-height: 20px;color:#343536;font-size:12px;font-family: "Microsoft YaHei";}
+.inc-footer{background: url("rsc/img/foot.jpg") repeat-x;width:100%;height:115px;text-align:center;padding-top:10px;line-height: 20px;color:#343536;font-size:12px;font-family: "Microsoft YaHei";}
