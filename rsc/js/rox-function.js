@@ -3,7 +3,7 @@
  */
 
 //添加tabs
-function init_rox_tabs(tabid,_src) {
+function init_rox_tabs(tabid,_src,callback) {
     var iframeid="iframe-"+tabid;
     var _iframe=$("#"+iframeid);
     var param=_src.split("?");
@@ -15,7 +15,7 @@ function init_rox_tabs(tabid,_src) {
         _iframe.show();
         isExist=true;
     }else{
-        var _html="<iframe id='"+iframeid+"' name='' src='"+_src+"' onload='init_load_pubtemplate(\""+iframeid+"\")' width='100%'  frameborder='no' border='0' marginwidth='0' marginheight='0' scrolling='no' allowtransparency='yes' style='height: 886px;'></iframe>";
+        var _html="<iframe id='"+iframeid+"' name='' src='"+_src+"' onload='init_load_pubtemplate(\""+iframeid+"\","+callback+")' width='100%'  frameborder='no' border='0' marginwidth='0' marginheight='0' scrolling='no' allowtransparency='yes' style='height: 886px;'></iframe>";
         $(".content>.inc-content").append(_html);
     }
     //判断路径是否传入参数
@@ -35,13 +35,13 @@ function init_select_tab(iframeid,param) {
 }
 
 //加载左部与右部
-function init_load_pubtemplate(_iframeid) {
+function init_load_pubtemplate(_iframeid,callback) {
     var _iframe=$("#"+_iframeid);
     var _src=_iframe.attr("src");
     var param=_src.split("?")[1];
-    console.log(param,_src);
-    if(param.split("=")[1]=="")return;
     var doc=_iframe.contents();
+   if(callback)callback();
+    if(param.split("=")[1]=="")return;
     var _html='<div class="contain"><div class="inc-left"></div><div class="inc-right"></div></div>';
     $("body",doc).html(_html);
     $(".contain>.inc-left",doc).load("templates/public-page/ifr-left.html",function () {
@@ -57,7 +57,6 @@ function init_load_pubtemplate(_iframeid) {
         _html+="</ul>";
         $(".inc-left-menus",this).html(_html);
         $(".contain>.inc-right",doc).load("templates/public-page/ifr-right.html",function () {
-            //_inc_right._init(doc,_iframeid);
             init_select_tab(_iframeid,param);
         });
     });

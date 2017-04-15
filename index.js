@@ -125,7 +125,16 @@ var inc_content={
             _src="index/index.html?menuid="
         }
         console.log(_tabid,_src,sessionStorage);
-        init_rox_tabs(_tabid,_src);
+        init_rox_tabs(_tabid,_src,function () {
+            console.log(sessionStorage._tabid);
+            if(sessionStorage._tabid=="information"){
+                var _iframe=$("#iframe-information");
+                var doc=_iframe.contents();
+                var _height=$(".file-contain",doc).height();
+                console.log($(doc).html(),$(".file-contain",doc).length,_height,"aaaaaaa");
+                _iframe.height(_height+20);
+            }
+        });
     }
 };
 

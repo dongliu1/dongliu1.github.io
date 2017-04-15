@@ -1,4 +1,4 @@
-.contain{width:100%;height:100%;text-align: center;}
+.contain{width:100%;text-align: center;background-color: #fbfbfb;}
 .contain>.content{width:1000px;display: inline-block;margin:0;text-align: left;}
 .content>.inc-head{width:100%;}
 #tab-menus{background: url("rsc/img/menu_bg.jpg") repeat-x;height: 40px;padding:0 1.5em;}
@@ -10,5 +10,4 @@
 .inc-tabs>ul:not(:first-child)>li{cursor: pointer;padding: .5em;border-bottom: 1px solid #ccc;font-weight: 600;}
 .inc-tabs>ul:not(:first-child)>li:last-child{border-bottom: 0;}
 .inc-tabs>ul:not(:first-child)>li:hover{color:#a10b0b!important;}
-.inc-content{min-height:886px;}
 .inc-footer{background: url("rsc/img/foot.jpg") repeat-x;width:100%;height:115px;text-align:center;padding-top:10px;line-height: 20px;color:#343536;font-size:12px;font-family: "Microsoft YaHei";}

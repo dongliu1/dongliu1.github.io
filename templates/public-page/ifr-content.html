@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>中共湖北省委党校</title>
+    <link rel="stylesheet" type="text/css" href="../../rsc/css/location.css"/>
+    <link rel="stylesheet" type="text/css" href="../../rsc/css/skins/default-skins.css"/>
+    <link rel="stylesheet" type="text/css" href="../../rsc/css/skins/blue-skins.css"/>
+    <link rel="stylesheet" type="text/css" href="../../rsc/css/skins/gray-skins.css"/>
+    <link rel="stylesheet" type="text/css" href="../../rsc/css/handheld/location.css" media="handheld"/>
+    <link rel="stylesheet" type="text/css" href="../../rsc/css/handheld/skins/default-skins.css" media="handheld"/>
+    <link rel="stylesheet" type="text/css" href="../../rsc/css/handheld/skins/blue-skins.css" media="handheld"/>
+    <link rel="stylesheet" type="text/css" href="../../rsc/css/handheld/skins/gray-skins.css" media="handheld"/>
+    <link rel="stylesheet" type="text/css" href="../../index.css">
 </head>
 <body>
-$END$
+<div class="file-contain" style="border:2px solid #ccc;margin-top:10px;">
+    <div class="file-content" style="text-align: center;padding-top:3em;">
+        <img id="content-document">
+    </div>
+</div>
 </body>
+<script src="../../libs/jquery/jquery.min.js"></script>
+<script src="../../libs/momentjs/moment.min.js"></script>
+<script>
+    $(function () {
+        _init_content._init();
+    });
+    var _init_content={
+        _init:function () {
+            $("#content-document").attr("src","../../rsc/files/fileimgs/testfile.png")
+        }
+    }
+</script>
 </html>

@@ -3,8 +3,375 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<h1>页面</h1>
+<div class="contain">
+    <div class="nav-bar">
+        <div class="float-left">
+            <a class="weather-forecast"></a>
+        </div>
+        <div class="float-right">
+            <span class="title">全文搜索</span>
+            <span class="search-input">
+                <input type="text" placeholder="请输入关键字">
+            </span>
+            <button type="button" style="border-radius: 5px;cursor: pointer;border:1px solid #ccc;padding:.3em .5em;outline: none;background-color: #eee;">搜索</button>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="news-menu">
+        <div class="news-img float-left">
+            <div class="img-title">
+                <span class="float-left">图片新闻</span>
+                <a class="float-right" href="javascript:void (0)">更多</a>
+                <div class="clear"></div>
+            </div>
+            <div class="img-content" style="position: relative;width:415px;height:277px;display: inline-block;">
+                <ul id="img-news">
+                    <li>
+                        <img style="width:415px;height:277px;" src="../rsc/img/1482712622322.jpg">
+                    </li>
+                    <li style="display: none;">
+                        <img src="">
+                    </li>
+                    <li style="display: none;">
+                        <img src="">
+                    </li>
+                    <li style="display: none;">
+                        <img src="">
+                    </li>
+                    <li style="display: none;">
+                        <img src="">
+                    </li>
+                </ul>
+                <div class="btn-groups" style="position: absolute;right:10px;bottom: 10px;">
+                    <button type="button" class="float-left btn-scroll btn-active">1</button>
+                    <button type="button" class="float-left btn-scroll">2</button>
+                    <button type="button" class="float-left btn-scroll">3</button>
+                    <button type="button" class="float-left btn-scroll">4</button>
+                    <button type="button" class="float-left btn-scroll">5</button>
+                    <div class="clear"></div>
+                </div>
+                <div class="img-name"><nobr>倾听基层心声  提升培训质量——副校长肖卫康与乡镇党委书记班学员开展毕业座谈交流</nobr></div>
+            </div>
+        </div>
+        <div class="news-info float-left" style="margin-top: 10px;">
+            <div class="news-text-info" style="margin-bottom: 12px;">
+                <div class="news-title">
+                    <span class="float-left">校园要闻</span>
+                    <a class="float-right" href="javascript:void(0)">更多</a>
+                    <div class="clear"></div>
+                </div>
+                <ul>
+                    <li><a class="float-left">图书馆电子借阅机4月书目</a><span class="float-right">2017-04-15</span><div class="clear"></div></li>
+                    <li><a class="float-left">图书馆电子借阅机4月书目</a><span class="float-right">2017-04-15</span><div class="clear"></div></li>
+                    <li><a class="float-left">图书馆电子借阅机4月书目</a><span class="float-right">2017-04-15</span><div class="clear"></div></li>
+                    <li><a class="float-left">图书馆电子借阅机4月书目</a><span class="float-right">2017-04-15</span><div class="clear"></div></li>
+                    <li><a class="float-left">图书馆电子借阅机4月书目</a><span class="float-right">2017-04-15</span><div class="clear"></div></li>
+                </ul>
+            </div>
+            <div class="news-img-info">
+                <div class="news-title">
+                    <span class="float-left">视频新闻</span>
+                    <a class="float-right" href="javascript:void(0)">更多</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="news-imgs">
+                    <div class="news-img-group">
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="img-news-contain">
+        <a href="javascript:void(0)">
+            <img src="../rsc/img/ad04.jpg">
+        </a>
+    </div>
+    <div class="img-news-contain">
+        <a href="javascript:void(0)">
+            <img src="../rsc/img/syss.png">
+        </a>
+        <a href="javascript:void(0)">
+            <img src="../rsc/img/hyjs.jpg">
+        </a>
+    </div>
+    <div class="content-tabs">
+        <div class="content-left">
+            <div class="tab-contain">
+                <div class="tab-title">
+                    <span class="float-left">通知公告</span>
+                    <a class="float-right" href=javascript:void(0)>更多</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="tab-menus">
+                    <ul>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-contain">
+                <div class="tab-title">
+                    <span class="float-left">报刊杂志</span>
+                    <a class="float-right" href=javascript:void(0)>更多</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="tab-menus">
+                    <ul>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-contain">
+                <div class="tab-title">
+                    <span class="float-left">服务保障</span>
+                    <a class="float-right" href=javascript:void(0)>更多</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="tab-menus">
+                    <ul>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-contain">
+                <div class="tab-title">
+                    <span class="float-left">基层党校</span>
+                    <a class="float-right" href=javascript:void(0)>更多</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="tab-menus">
+                    <ul>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content-middle">
+            <div class="tab-contain">
+                <div class="tab-title">
+                    <span class="float-left">教学信息</span>
+                    <a class="float-right" href=javascript:void(0)>更多</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="tab-menus">
+                    <ul>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-contain">
+                <div class="tab-title">
+                    <span class="float-left">科研动态</span>
+                    <a class="float-right" href=javascript:void(0)>更多</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="tab-menus">
+                    <ul>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-contain">
+                <div class="tab-title">
+                    <span class="float-left">信息化建设</span>
+                    <a class="float-right" href=javascript:void(0)>更多</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="tab-menus">
+                    <ul>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-contain">
+                <div class="tab-title">
+                    <span class="float-left">学员管理</span>
+                    <a class="float-right" href=javascript:void(0)>更多</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="tab-menus">
+                    <ul>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                        <li title="一周安排（2017年4月17日-2017年4月24日）">
+                            <a href="javascript:void(0)">一周安排（2017年4月17日-2017年4月24日）</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="tab-contain">
+                <div class="tab-title">
+                    <span class="float-left">智慧校园</span>
+                    <a class="float-right" href=javascript:void(0)>更多</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="tab-menus"></div>
+            </div>
+            <div class="tab-contain">
+                <div class="tab-title">
+                    <span class="float-left">党校系统精品课获得者</span>
+                    <a class="float-right" href=javascript:void(0)>更多</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="tab-menus"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="imgs-scroll"></div>
+    <div class="friend-links"></div>
+</div>
+<script src="../libs/jquery/jquery.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
