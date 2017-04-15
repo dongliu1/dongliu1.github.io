@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>校院概况</title>
+    <link rel="stylesheet" type="text/css" href="../rsc/css/location.css"/>
+    <link rel="stylesheet" type="text/css" href="../rsc/css/skins/default-skins.css"/>
+    <link rel="stylesheet" type="text/css" href="../rsc/css/skins/blue-skins.css"/>
+    <link rel="stylesheet" type="text/css" href="../rsc/css/skins/gray-skins.css"/>
+    <link rel="stylesheet" type="text/css" href="../rsc/css/handheld/location.css" media="handheld"/>
+    <link rel="stylesheet" type="text/css" href="../rsc/css/handheld/skins/default-skins.css" media="handheld"/>
+    <link rel="stylesheet" type="text/css" href="../rsc/css/handheld/skins/blue-skins.css" media="handheld"/>
+    <link rel="stylesheet" type="text/css" href="../rsc/css/handheld/skins/gray-skins.css" media="handheld"/>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+</body>
+<script src="../libs/jquery/jquery.min.js"></script>
+<script>
+    $(function () {
+        console.log($(window).height());
+        $(window).resize(function () {
+            console.log($(this).height())
+        });
+        console.log($("body").height());
+        $("body").resize(function () {
+            console.log($(this).height())
+        })
+    })
+</script>
+</html>

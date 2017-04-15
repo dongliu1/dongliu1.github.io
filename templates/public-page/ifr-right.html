@@ -1,0 +1,23 @@
+<div id="inc-right-content" class="inc-right-content">
+
+</div>
+<script>
+    var _inc_right={
+        iframeid:null,
+        iframeObj:null,
+        _scopeId:"inc-right-content",
+        _init:function (document,_iframeid) {
+            _inc_right.iframeObj=document;
+            if(_iframeid.indexOf("#"))_iframeid.replace("#","");
+            _inc_left.iframeid=_iframeid;
+            $.post("rsc/files/20170416",function (content) {
+                $("#"+_inc_right._scopeId,document).text(content);
+                var _height=$(".contain",document).height();
+                if(_height>886)$("#"+_iframeid).height(_height);
+            })
+        },
+        _onclick:function () {
+
+        }
+    };
+</script>

@@ -1,0 +1,14 @@
+.contain{width:100%;height:100%;text-align: center;}
+.contain>.content{width:1000px;display: inline-block;margin:0;text-align: left;}
+.content>.inc-head{width:100%;}
+#tab-menus{background: url("rsc/img/menu_bg.jpg") repeat-x;height: 40px;padding:0 1.5em;}
+#tab-menus li{height:30px;padding-top:5px;float: left;cursor: pointer;}
+#tab-menus li>a{display:inline-block;padding:.6em .4em;min-width: 80px;font-size:1.1em;font-weight: 600;color:#fff!important;text-align: center;vertical-align: middle;}
+#tab-menus li:hover>a{display:inline-block;background-color: #fff;border-radius: 5px 5px 0 0;box-shadow: 0 -1px #333;color:#333!important;}
+#tab-menus li>a.tab-active{background-color: #fff;border-radius: 5px 5px 0 0;box-shadow: 0 -1px #333;color:#333!important;}
+.inc-tabs>ul:not(:first-child){background-color: #d8e7f6;border:1px solid #ccc;color:#333;}
+.inc-tabs>ul:not(:first-child)>li{cursor: pointer;padding: .5em;border-bottom: 1px solid #ccc;font-weight: 600;}
+.inc-tabs>ul:not(:first-child)>li:last-child{border-bottom: 0;}
+.inc-tabs>ul:not(:first-child)>li:hover{color:#a10b0b!important;}
+.inc-content{min-height:886px;}
+.inc-footer{background: url("rsc/img/foot.jpg") repeat-x;width:100%;height:115px;text-align:center;padding-top:30px;line-height: 20px;color:#343536;font-size:12px;font-family: "Microsoft YaHei";}

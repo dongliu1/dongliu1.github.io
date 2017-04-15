@@ -1,0 +1,17 @@
+<div class="inc-left-menus"></div>
+<script>
+    var _inc_left={
+        iframeid:null,
+        iframeObj:null,
+        _init:function (document,_iframeid) {
+            _inc_left.iframeObj=document;
+            if(_iframeid.indexOf("#"))_iframeid.replace("#","");
+            _inc_left.iframeid=_iframeid;
+        },
+        _onclick:function (obj) {
+            $(".inc-left-menus li",_inc_left.iframeObj).removeClass("tab-active");
+            $(obj).addClass("tab-active");
+            _inc_right._init(_inc_left.iframeObj,_inc_left.iframeid)
+        }
+    };
+</script>

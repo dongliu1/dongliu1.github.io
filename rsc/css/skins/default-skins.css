@@ -1,0 +1,8 @@
+/***颜色css*****默认主题****/
+
+
+/****二级页面主题*****/
+.inc-left{background: url("../../img/second_nav.jpg") no-repeat;color:#333;font-weight: bold;font-family: "Microsoft YaHei";}
+.inc-left li{background: url("../../img/s_navbg.png") no-repeat;}
+.inc-left ul li.tab-active,.inc-left ul li:hover{color:#177ED5!important;}
+#inc-right-content{border:1px solid #ddd;}

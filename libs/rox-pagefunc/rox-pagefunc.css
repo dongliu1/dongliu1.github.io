@@ -1,0 +1,6 @@
+.rox-pageRows,.rox-currentPage{width:2em;}
+.rox-pageBtn .rox-page-btn{display:inline-block;font-size:18px;text-align:center;cursor: pointer;border:1px solid #ddd;color:#398def;border-radius:4px;padding:0;width:38px;height:18px;line-height: 18px;}
+.rox-pageBtn .rox-page-btn:hover{background-color:#398def;color: #fff!important; }
+.rox-pageBtn{float: right;}
+.rox-pageInfo{float: left;}
+.rox-pageInfo input{text-align: center;width: 35px;height: 18px;line-height: 12px;border: 1px solid #ccc;}
